@@ -1,6 +1,6 @@
 [flake8]
-exclude=
+exclude =
     migrations,
     __pycharm__,
-    manage.py
+    manage.py,
     settings.py
