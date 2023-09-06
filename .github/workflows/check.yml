@@ -7,7 +7,7 @@ jobs:
         steps:
             - name: Login to DockerHub
               uses: docker/login-action@v1
-              env:
+              with:
                   username: ${{ secret.DOCKERHUB_USER }}
                   password: ${{ secret.DOCKERHUB_TOKEN }}
             - name: Checkout
